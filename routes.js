@@ -130,7 +130,6 @@ module.exports = {
   subscribePage,
   fourOfourPage,
   productsPage,
-  // ronniePage,
 
   asynchronous,
 };
