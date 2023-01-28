@@ -28,5 +28,3 @@ const logEvents = async (event, level, message) => {
 };
 
 module.exports = logEvents;
-
-// The log events that I am capturing is everytime the route is acessed and if there is an error

@@ -1,19 +1,25 @@
 {
-  "name": "fsqap2-sem3",
-  "version": "1.0.0",
-  "description": "QAP2 ",
+  "name": "QAP2",
+  "version": "1.0.1",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Greenenathan/FSQAP2-Sem3.git"
+    "url": "git+https://github.com/prawstho/WeekFour.git"
   },
-  "author": "Nathan Greene",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Greenenathan/FSQAP2-Sem3/issues"
+    "url": "https://github.com/prawstho/WeekFour/issues"
   },
-  "homepage": "https://github.com/Greenenathan/FSQAP2-Sem3#readme"
+  "homepage": "https://github.com/prawstho/WeekFour#readme",
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "package-lock": "^1.0.5",
+    "uuid": "^9.0.0"
+  }
 }
