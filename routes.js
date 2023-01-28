@@ -3,7 +3,7 @@ const EventEmitter = require("events");
 class MyEmitter extends EventEmitter {}
 const myEmitter = new MyEmitter();
 
-// LOAD THE LOGEVENTS MODULE
+// LOGEVENTS PAGE
 const logEvents = require("./logEvents");
 
 myEmitter.addListener("route", (event, level, msg) => {
@@ -33,7 +33,7 @@ function contactPage(path, event, response) {
     "the contact page was visited."
   );
 }
-// SUBSCRIBE PAGE
+// SUB PAGE
 function subscribePage(path, event, response) {
   displayFile(path, response);
   myEmitter.emit(
@@ -130,7 +130,4 @@ module.exports = {
   subscribePage,
   fourOfourPage,
   productsPage,
-  // ronniePage,
-
-  asynchronous,
 };
