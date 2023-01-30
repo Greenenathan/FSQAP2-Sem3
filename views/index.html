@@ -1,21 +1,68 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full-Stack JavaScript Week Four</title>
+    <title>Home</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header li {
+        list-style: none;
+        padding-top: 40px;
+      }
+      header li a {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+      }
+
+      header ol {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      header {
+        padding-bottom: 40px;
+        background-color: rgb(149, 213, 110);
+        text-align: center;
+      }
+
+      #Itext {
+        margin-top: 25%;
+      }
+
+      #products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+        /* background-color: cadetblue; */
+      }
+
+      #products li {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <h1>Full-Stack JavaScript Week Four</h1>
-    <h2>
-      With hard work and focus you will create a deeper understanding of node
-      and coding for the full-stack.
-    </h2>
-    Choose one of the following routes;
-    <ul>
-      <li><a href="/about">/about</a></li>
-      <li><a href="/subscribe">/subscribe</a></li>
-      <li><a href="/contact">/contact</a></li>
-      <li><a href="/about-me">/about-me</a></li>
-    </ul>
+    <header>
+      <ol>
+        <li><a href="./">Home</a></li>
+        <li><a href="./products">Product</a></li>
+        <li><a href="./about">About</a></li>
+        <li><a href="./contact">Contact </a></li>
+        <li><a href="/subscribe">Subscribe</a></li>
+      </ol>
+    </header>
+    <h1 id="Itext" align="center">Please select where you would like to go!</h1>
   </body>
 </html>

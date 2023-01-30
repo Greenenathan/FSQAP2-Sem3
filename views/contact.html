@@ -1,11 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact JavaScript Week Four</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header li {
+        list-style: none;
+        padding-top: 40px;
+      }
+      header li a {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+      }
+
+      header ol {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      header {
+        padding-bottom: 40px;
+        background-color: rgb(149, 213, 110);
+        text-align: center;
+      }
+
+      #products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+        /* background-color: cadetblue; */
+      }
+
+      #products li {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      #Ctext {
+        margin-top: 20%;
+      }
+    </style>
+    <title>Contact Page</title>
   </head>
   <body>
-    <h1>Where you at?</h1>
-    <h2>Stay where yer too.</h2>
+    <header>
+      <ol>
+        <li><a href="./">Home</a></li>
+        <li><a href="./products">Product</a></li>
+        <li><a href="./about">About</a></li>
+        <li><a href="./contact">Contact </a></li>
+        <li><a href="/subscribe">Subscribe</a></li>
+      </ol>
+    </header>
+    <div id="Ctext">
+      <h1 align="center">You can contact us at:</h1>
+      <h3 align="center">FearlessSup@gmail.com</h3>
+      <h3 align="center">Insta: Fearless.Sup</h3>
+      <h3 align="center">(709)543-2356</h3>
+      <h3 align="center">Located @ 34 Gains Lane</h3>
+    </div>
   </body>
 </html>

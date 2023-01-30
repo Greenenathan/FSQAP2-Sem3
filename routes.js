@@ -130,4 +130,6 @@ module.exports = {
   subscribePage,
   fourOfourPage,
   productsPage,
+  gymPage,
+  asynchronous,
 };
