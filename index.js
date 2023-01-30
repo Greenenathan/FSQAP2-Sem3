@@ -38,6 +38,12 @@ const server = http.createServer((request, response) => {
       routes.subscribePage(path, request.url, response);
       break;
 
+    case "/pics":
+      path += "pics.html";
+      response.statusCode = 200;
+      routes.picsPage(path, request.url, response);
+      break;
+
     default:
       path += "404.html";
       response.statusCode = 404;
