@@ -1,11 +1,79 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About JavaScript Week Four</title>
+    <title>About Page</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header li {
+        list-style: none;
+        padding-top: 40px;
+      }
+      header li a {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+      }
+
+      header ol {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      header {
+        padding-bottom: 40px;
+        background-color: rgb(149, 213, 110);
+        text-align: center;
+      }
+
+      #products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+      }
+
+      #products li {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      #AbPic {
+        margin-top: 10%;
+        margin-left: 36%;
+        align-content: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Wadup</h1>
-    <h2>This site is all about nothing!</h2>
+    <header>
+      <ol>
+        <li><a href="./">Home</a></li>
+        <li><a href="./products">Product</a></li>
+        <li><a href="./about">About</a></li>
+        <li><a href="./contact">Contact </a></li>
+        <li><a href="/subscribe">Subscribe</a></li>
+      </ol>
+    </header>
+    <h1 align="center">Fearless Supplements</h1>
+    <p align="center">
+      Take fitness to the next level with top of the line supplements!
+    </p>
+    <br />
+    <p align="center">We sell everything you need for your fitness journey!</p>
+    <img
+      id="AbPic"
+      src="https://thumbs.gfycat.com/HalfImmaculateHornshark-size_restricted.gif"
+      alt=""
+      width="400"
+    />
   </body>
 </html>
